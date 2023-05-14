@@ -1,55 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Simple Calculator</title>
-	<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator | Chetan</title>
 </head>
-
 <body>
-	<div class="container">
-		<h1><a style="text-decoration: none; color: #f1c40f; margin-left: 0.25rem;" href=""
-				onclick="location.reload();">CALCULATOR</a></h1>
-		<div class="calculator">
-			<input type="text" name="screen" id="answer" readonly>
-			<table>
-				<tr>
-					<td><button>(</button></td>
-					<td><button>)</button></td>
-					<td><button style="background-color: #e74c3c; font-weight: bold; color: #ecf0f1;">C</button></td>
-					<td><button>%</button></td>
-				</tr>
-				<tr>
-					<td><button>7</button></td>
-					<td><button>8</button></td>
-					<td><button>9</button></td>
-					<td><button>X</button></td>
-				</tr>
-				<tr>
-					<td><button>4</button></td>
-					<td><button>5</button></td>
-					<td><button>6</button></td>
-					<td><button>-</button></td>
-				</tr>
-				<tr>
-					<td><button>1</button></td>
-					<td><button>2</button></td>
-					<td><button>3</button></td>
-					<td><button>+</button></td>
-				</tr>
-				<tr>
-					<td><button>0</button></td>
-					<td><button style="font-weight: bold;">.</button></td>
-					<td><button>/</button></td>
-					<td><button style="background-color: #2ecc71; font-weight: bold; color: #ecf0f1;">=</button></td>
-				</tr>
-			</table>
+    <div class="wrapper">
+        <section class="screen">
+            0
+        </section>
+        <section class="calc-buttons">
+            <div class="calc-button-row">
+                <button class="calc-button double">
+                    C
+                </button>
+                <button class="calc-button">
+                    &larr;
+                </button>
+                <button class="calc-button">
+                    &divide;
+                </button>
+            </div>
 
+            <div class="calc-button-row">
+                <button class="calc-button">
+                    7
+                </button>
+                <button class="calc-button">
+                    8
+                </button>
+                <button class="calc-button">
+                    9
+                </button>
+                <button class="calc-button">
+                    &times;
+                </button>
+            </div>
 
+            <div class="calc-button-row">
+                <button class="calc-button">
+                    4
+                </button>
+                <button class="calc-button">
+                    5
+                </button>
+                <button class="calc-button">
+                    6
+                </button>
+                <button class="calc-button">
+                    &minus;
+                </button>
+            </div>
+
+            <div class="calc-button-row">
+                <button class="calc-button">
+                    1
+                </button>
+                <button class="calc-button">
+                    2
+                </button>
+                <button class="calc-button">
+                    3
+                </button>
+                <button class="calc-button">
+                    &plus;
+                </button>
+            </div>
+
+            <div class="calc-button-row">
+                <button class="calc-button triple">
+                    0
+                </button>
+                <button class="calc-button">
+                    &equals;
+                </button>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
-<script src="app.js"></script>
-
 </html>
